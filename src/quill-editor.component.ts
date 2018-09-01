@@ -165,7 +165,7 @@ export class QuillEditorComponent
       return;
     }
     if (!Quill) {
-      Quill = window.Quill;
+      Quill = window['Quill'];
     }
     if (!Quill) {
       Quill = require('quill');
