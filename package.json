@@ -24,6 +24,7 @@
     "pretest": "npm run lint",
     "test": "./node_modules/.bin/karma start"
   },
+  "prepare": "npm run build && npm run bundle",
   "keywords": [
     "editor",
     "rich text",
