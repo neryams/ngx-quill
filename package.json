@@ -25,7 +25,6 @@
     "prepare": "npm run build && npm run bundle",
     "test": "./node_modules/.bin/karma start"
   },
-  "files": ["bundles", "src"],
   "keywords": [
     "editor",
     "rich text",
