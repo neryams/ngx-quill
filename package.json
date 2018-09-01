@@ -22,7 +22,7 @@
     "build": "rm -rf ./dist && tsc && npm run bundle && npm run build:aot && npm run copyStaticToDist",
     "build:aot": "rm -rf aot && node_modules/.bin/ngc -p tsconfig-aot.json && rm -rf ./dist/aot/node_modules",
     "pretest": "npm run lint",
-    "prepare": "npm run build && npm run bundle",
+    "prepare": "npm run build && npm run bundle && cp -R dist/ ./",
     "test": "./node_modules/.bin/karma start"
   },
   "keywords": [
